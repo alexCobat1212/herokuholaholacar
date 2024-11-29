@@ -185,4 +185,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ["holaholacarbackend-o351.onrender.com","127.0.0.1","localhost"]
+=======
+ALLOWED_HOSTS = ["holaholacarbackend-4.onrender.com","127.0.0.1","localhost"]
+>>>>>>> bc4e1864d8ef6a3b546aca8f07a165955789410d
