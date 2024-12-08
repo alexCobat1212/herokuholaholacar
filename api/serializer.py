@@ -3,6 +3,9 @@ from django.contrib.auth.password_validation import validate_password
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework import serializers
 
+
+# ----------------------- Creating User ------------------------
+
 class UserSerializers(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -23,6 +26,10 @@ class MyenObtainPairSerializer(TokenObtainPairSerializer):
         token['verified'] = user.profile.verified
 
         return token
+
+
+
+# ----------------- User Registration ----------------------
 
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(
@@ -50,12 +57,6 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
-
-
-
-
-
-
 
 
 # --------------------- Ride Booking   --------------------------

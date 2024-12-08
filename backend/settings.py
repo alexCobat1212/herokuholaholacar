@@ -187,4 +187,4 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 ALLOWED_HOSTS = ["holaholacarbackend-o351.onrender.com","127.0.0.1","localhost"]
 ALLOWED_HOSTS = ["holaholacarbackend-4.onrender.com","127.0.0.1","localhost"]
-ALLOWED_HOSTS = ["holaholacarbackend-4.onrender.com","127.0.0.1","localhost"]
+ALLOWED_HOSTS = ["holaholacarbackend-5.onrender.com","127.0.0.1","localhost"]
