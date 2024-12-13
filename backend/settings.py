@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 from datetime import timedelta
+import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -128,6 +131,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STORAGES = {
     # ...
     "staticfiles": {
@@ -185,6 +189,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-ALLOWED_HOSTS = ["holaholacarbackend-o351.onrender.com","127.0.0.1","localhost"]
+ALLOWED_HOSTS = ["holaholacarbackend-o351.onrender.com","127.0.0.1","localhost","*"]
 ALLOWED_HOSTS = ["holaholacarbackend-4.onrender.com","127.0.0.1","localhost"]
 ALLOWED_HOSTS = ["holaholacarbackend-5.onrender.com","127.0.0.1","localhost"]
+
+django_heroku.settings(locals())
