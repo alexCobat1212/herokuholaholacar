@@ -11,8 +11,6 @@ class ProfileAdmin(admin.ModelAdmin):
     list_display = ['user','full_name','verified']
 
 
-admin.site.register(User,UserAdmin)
-admin.site.register(Profile,ProfileAdmin)
 
 admin.site.register(Ride)
 admin.site.register(Booking)
