@@ -31,8 +31,9 @@ sqlparse==0.5.1
 Twisted==24.10.0
 txaio==23.1.1
 typing_extensions==4.12.2
-tzdata==2024.2
+tzdata==2025.8
 uvicorn==0.32.1
 whitenoise==6.8.2
 
 zope.interface==7.1.1
+
