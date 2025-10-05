@@ -12,20 +12,6 @@ class UserSerializers(serializers.ModelSerializer):
         fields = ['id','username','email','verified']
 
 
-class MyenObtainPairSerializer(TokenObtainPairSerializer):
-    @classmethod
-    def get_token(cls,user):
-        token = super().get_token(user)
-
-
-        token['full_name'] = user.profile.full_name
-        token['username'] = user.username
-        token['email'] = user.email
-        token['bio'] = user.profile.bio
-
-        return token
-
-
 
 # ----------------- User Registration ----------------------
 
