@@ -12,6 +12,5 @@ class ProfileAdmin(admin.ModelAdmin):
 
 
 
-admin.site.register(Ride)
-admin.site.register(Booking)
+
 
